@@ -1,0 +1,1 @@
+Django app to return a .ics file when called via http://www.keith-wood.name/icalendar.html 

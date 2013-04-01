@@ -1,0 +1,9 @@
+include AUTHORS
+include LICENSE
+include DESCRIPTION
+include CHANGELOG.txt
+include README.md
+graft ics_generator 
+global-exclude *.orig *.pyc *.log
+prune ics_generator/tests/coverage/
+prune ics_generator/.ropeproject/
