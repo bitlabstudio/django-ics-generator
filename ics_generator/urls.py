@@ -6,7 +6,6 @@ from .views import ICSView
 
 urlpatterns = patterns(
     '',
-    # About Advisors
     url(r'^event.ics$',
         ICSView.as_view(),
         name='ics_generator'),

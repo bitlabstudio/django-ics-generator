@@ -9,9 +9,6 @@ class ICSView(View):
 
     def get(self, request, *args, **kwargs):
         content = request.GET.get('content')
-        response_kwargs = {}
-        response_kwargs['content_type'] = 'text/calendar'
-        response = HttpResponse(content, **response_kwargs)
-        response['Content-Disposition'] = (
-            'attachment; filename=event.ics')
+        response = HttpResponse(content, content_type='text/calendar')
+        response['Content-Disposition'] = 'attachment; filename=event.ics'
         return response

@@ -1,7 +1,7 @@
 Django ICS Generator 
 ====================
 
-A simple Django view that returns a .ics file as an attachment download when
+A simple Django view that returns an .ics file as an attachment download when
 called via the icalendar script: http://www.keith-wood.name/icalendar.html
 
 Installation
