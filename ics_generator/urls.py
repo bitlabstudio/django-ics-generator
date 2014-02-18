@@ -1,5 +1,5 @@
 """URL patterns for the ``ics_generator`` app."""
-from django.conf.urls.defaults import url, patterns
+from django.conf.urls import url, patterns
 
 from .views import ICSView
 
